@@ -23,7 +23,7 @@ The main goal of this project was to recreate the Disney+ interface using modern
 
 ## Project Overview
 
-Disney Plus UI is a professional project that replicates the Disney+ interface using semantic HTML, advanced CSS with global variables and responsive design, JavaScript for dynamic integration with the TMDB API, and images professionally processed in Photoshop at 4K quality.
+Disney Plus UI is a professional project that replicates the Disney+ interface using semantic HTML, advanced CSS with global variables and responsive design, JavaScript for dynamic integration with the TMDB API, and high-quality movie posters and images dynamically fetched from TMDB.
 
 ***
 
@@ -39,6 +39,7 @@ Disney Plus UI is a professional project that replicates the Disney+ interface u
 
 ## Key Features
 
+- **Disney Animation Catalog**: Featuring classic and modern Disney Animation films including Beauty and the Beast, The Little Mermaid, Frozen, Encanto, Zootopia, The Lion King, Inside Out 2, and more
 - Dynamic creation of cards displaying title, description, cover images, background images, and film ratings
 - Interactive, responsive, and easy-to-navigate menu
 - Visual highlight for the selected active film
@@ -50,8 +51,34 @@ Disney Plus UI is a professional project that replicates the Disney+ interface u
 
 ***
 
+## Movie Catalog
+
+The application currently features a curated selection of **Disney Animation** films:
+
+### Disney Animation Collection
+- Beauty and the Beast (1991)
+- The Little Mermaid (1989)
+- Sleeping Beauty (1959)
+- Frozen (2013)
+- Frozen II (2019)
+- Encanto (2021)
+- Big Hero 6 (2014)
+- Bolt (2008)
+- Zootopia (2016)
+- The Lion King (1994)
+- Cinderella (1950)
+- Mulan (1998)
+- Toy Story 3 (2010)
+- Inside Out 2 (2024)
+- Monsters, Inc. (2001)
+
+All movie data including titles, descriptions, ratings, and images are dynamically fetched from **The Movie Database (TMDB) API**.
+
 ## Improvements to Implement
 
+- Expand catalog to include Pixar films
+- Expand catalog to include Marvel films
+- Expand catalog to include Disney Channel Original Movies
 - Enable saving films in localStorage to preserve application state across sessions
 - Configure the "Watch Now" button to dynamically open film trailers
 - Develop search functionality and dynamic film addition within the interface
