@@ -2,7 +2,7 @@
   Disney Plus UI
 </h1>
 
-![Image](HOME.gif)
+![Image](image.gif)
 
 ## Objective
 
