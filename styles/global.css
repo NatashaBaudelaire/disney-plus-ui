@@ -4,6 +4,8 @@
 @import url('./movie.css');
 @import url('./movies.css');
 @import url('./navigation.css');
+@import url('./login.css');
+@import url('./modal.css');
 
 * {
   margin: 0;
@@ -25,8 +27,38 @@
 
 :root {
   --primary: #fff;
-
   --linear: linear-gradient(154.23deg, #0F3A7B -58.45%, #0CFFFF 374.49%);
+
+  /* Spacing scale */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+
+  /* Typography scale */
+  --font-size-xs: 12px;
+  --font-size-sm: 13px;
+  --font-size-base: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 32px;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.6s ease;
 }
 
 body, button, textarea, input {

@@ -1,4 +1,4 @@
-const API_KEY = '03c4e3dc470296959d6bf68804146538'
+const API_KEY = typeof process !== 'undefined' && process.env ? process.env.TMDB_API_KEY : '03c4e3dc470296959d6bf68804146538'
 const API_LANGUAGE = 'EN-GB'
 const BASE_URL_IMAGE = {
   original: 'https://image.tmdb.org/t/p/original',
@@ -72,7 +72,7 @@ function changeMainMovie(movieId) {
 function createButtonMovie(movieId) {
   const button = document.createElement('button')
   button.setAttribute('onclick', `changeMainMovie('${movieId}')`)
-  button.innerHTML = '<img src="/assets/icon-play-button.png" alt="Icon play button" />'
+  button.innerHTML = '<img src="./assets/icon-play-button.png" alt="Icon play button" />'
 
   return button
 }
@@ -166,12 +166,21 @@ async function getMovieData(movieId) {
 function loadMovies() {
 
   const LIST_MOVIES = [
-    'tt22022452',
-    'tt4154796',
-    'tt0110357',
-    'tt2948372',
-    'tt3521164',
-    'tt1825683'
+    'tt0103776', // Beauty and the Beast (1991)
+    'tt0114709', // The Little Mermaid (1989)
+    'tt0053285', // Sleeping Beauty (1959)
+    'tt2294629', // Frozen (2013)
+    'tt4520988', // Frozen II (2019)
+    'tt2948372', // Encanto (2021)
+    'tt1049413', // Big Hero 6 (2014)
+    'tt0374554', // Bolt (2008)
+    'tt2948356', // Zootopia (2016)
+    'tt0110357', // The Lion King (1994)
+    'tt0143145', // Cinderella (1950)
+    'tt0120281', // Mulan (1998)
+    'tt1201687', // Toy Story 3 (2010) - Representando Toy Story
+    'tt22022452', // Inside Out 2 (2024)
+    'tt0145487', // Monsters, Inc. (2001)
   ];
   LIST_MOVIES.map(async (movie, index) => {
     const movieData = await getMovieData(movie)

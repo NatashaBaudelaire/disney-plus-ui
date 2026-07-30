@@ -43,8 +43,9 @@
   .navigation {
     padding: 44px 24px 24px;
   }
-}
-.navigation h2 {
+
+  .navigation h2 {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+}
