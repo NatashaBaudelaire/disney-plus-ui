@@ -51,14 +51,12 @@
   height: 36px;
 
   opacity: 0;
-  transform: translateY(40px);
 
-  transition: all 0.6s;
+  transition: opacity 0.6s;
 }
 
 .movie:hover button {
   opacity: 1;
-  transform: translateY(0);
 }
 
 .movie__image {
