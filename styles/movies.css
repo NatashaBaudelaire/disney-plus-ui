@@ -2,8 +2,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px 16px;
-  
+
   margin-top: 48px;
+  margin-left: 110px;
   list-style: none;
 }
 
